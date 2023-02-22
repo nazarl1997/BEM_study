@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="page">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +7,9 @@
         <title>BEM study</title>
         <link rel="stylesheet" href="./style.css">
     </head>
-    <body>
-        <header class="page-header page-header--theme_light page-header--size_l">
-            <a class="page-header__logo" href="index.html">
+    <body class="page__content">
+        <header class="page-header page__header">
+            <a class="logo" href="index.html">
                 <img src="logo.svg" alt="Mate academy logo">
             </a>
 
@@ -22,28 +22,24 @@
                         <a class="nav__link" href="courses.html">Courses</a>
                     </li>
                     <li>
-                        <a class="nav__link nav__link--" href="bem.html">BEM</a>
+                        <a class="nav__link" href="bem.html">BEM</a>
                     </li>
                 </ul>
             </nav>
-                    
         </header>
 
         <main>
-            <h1>БЕМ - блок, елемент, модифікатор</h1>
+            <h1 class="title">БЕМ - блок, елемент, модифікатор</h1>
 
-            <section>
-                <h2>Що таке БЕМ?</h2>
+            <section class="section page__section">
+                <h2 class="section__title">Що таке БЕМ?</h2>
 
-                <p>
-                    <strong>БЕМ</strong> - це методологія веб розробки, в основі якої лежить розділення інтерфейсу на незалежні частини (блоки)
-                </p>
+                <p><strong>БЕМ</strong> - це методологія веб розробки, в основі якої лежить розділення інтерфейсу на незалежні частини (блоки)</p>
+                <p>Ми будемо розглядати БЕМ з точки зору верстки</p>
+            </section>
 
-                <p>
-                    Ми будемо розглядати БЕМ з точки зору верстки
-                </p>
-
-                <h2>Які проблеми вирішує БЕМ?</h2>
+            <section class="section page__section">
+                <h2 class="section__title">Які проблеми вирішує БЕМ?</h2>
 
                 <p>Без спрощує підтримку коду:</p>
 
@@ -63,8 +59,8 @@
             </section>
         </main>
 
-        <footer>
-            
+        <footer class="footer">
+            © Copyright 2023, Mate academy
         </footer>
     </body>
 </html>

@@ -1,5 +1,5 @@
-/* #region home-page */
-.home-page {
+/* #region page */
+.page {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     color: #333a4a;
@@ -8,8 +8,32 @@
     --section-border-color: #ced2ed;
 }
 
-.home-page__content {
+.page__content {
     margin: 0;
+}
+
+.page__header {
+    position: sticky;
+    top: 0;
+}
+
+.page__section {
+    max-width: 640px;
+    margin: 0 auto 24px;
+}
+
+.page__section--position_left {
+    margin-left: 24px;
+}
+
+.page__section--position_right {
+    margin-right: 24px;
+}
+
+.page__section--size_full {
+    max-width: none;
+    margin-left: 24px;
+    margin-right: 24px;
 }
 /* #endregion */
 
@@ -66,26 +90,58 @@ img {
 
 /* #endregion */
 
-.title {
-    margin: 0.67em 0;
+h1 {
+    margin: 0px
+}
+
+.title{
+    padding: 20px 0;
     font-size: 36px;
     font-weight: bold;
     text-align: center ;
 }
 
 .section {
-    margin: 24px;
     border: 1px solid  #ced2ed;
     padding: 24px;
     border-radius: 16px;
     background-color: #fff;
 }
 
+.section__title {
+    margin: 0 0 16px;
+}
+
+.benefits__list {
+    margin: 0;
+}
+
 .footer {
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 150px;
+    min-height: 150px;
+    padding: 60px;
     background-color: #333a4a;
     color: #fff;
+    text-align: center;
+}
+
+.learning-format {
+background-color: #ced2ed;
+}
+
+.learning-format__title {
+    margin: 0;
+}
+
+.learning-format__benefits {
+    margin: 0;
+}
+
+.learning-formats {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
 }
