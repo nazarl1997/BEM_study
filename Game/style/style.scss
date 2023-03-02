@@ -8,6 +8,16 @@ $row-count: 5;
     @return $base + ($index - 1) * $size;
 }
 
+@mixin square ($size) {
+    width: $size;
+    height: $size;
+}
+
+@mixin circle ($size) {
+    @include square($size);
+    border-radius: 50%;
+}
+
 .game {
     position: relative;
     width: calc(#{$col-count} * #{$cell-size});
@@ -19,8 +29,7 @@ $row-count: 5;
 
     &__cell {
         box-sizing: border-box;
-        height: #{$cell-size};
-        width: #{$cell-size};
+        @include square($cell-size);
         border: 1px dashed #000;
     }
 
@@ -29,9 +38,7 @@ $row-count: 5;
         position: absolute;
         left: #{$base-shift};
         top: #{$base-shift};
-        width: #{$player-size};
-        height: #{$player-size};
-        border-radius: 50%;
+        @include circle($player-size);
         background-color: #000;
 
         @for $index from 1 through $row-count {
